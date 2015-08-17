@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width">
+
+		<title>IPS Themes | User Guide</title>
+
+		<!-- Flatdoc -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/legacy.js'></script>
+		<script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/flatdoc.js'></script>
+
+		<!-- Flatdoc theme -->
+		<link  href='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/style.css' rel='stylesheet'>
+		<script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/script.js'></script>
+
+		<style>
+			a, a:hover, code .string, code .number { color: #963043; transition: 120ms; -webkit-transition: 120ms; }
+			.header h1, .header h1 a, .header h1 a:visited { color: white; }
+			.header li, .header h1 + ul { border: 0; }
+			.header li a { color: rgb(115, 117, 126); padding: 0 10px;}
+			.header li a:hover, .menu a.level-1:hover { color: white; }
+			.menu a.level-1, .menu a.level-1:visited { color: #B3B3BF; }
+			.menu a.active, .menu a.active:visited, .menu a.active:hover { color: #963043 !important; }
+			.menu a.active:after { background: #963043; }
+			.menu a, .menu a:visited { color: rgb(116, 123, 139); }
+			.menu a:hover { color: rgb(144, 153, 172); }
+			.button, .button:visited { background: #963043; border-color: #963043;}
+			.header { background: #1c1f26; text-shadow: none; border: 0; }
+			.menubar { background: -webkit-linear-gradient(top,#1c1f26 0,#22262f 100%); background: linear-gradient(to bottom,#1c1f26 0,#22262f 100%); border: 0; }
+		</style>
+
+		<!-- Meta -->
+		<meta content="IPS Themes | User Guide" property="og:title">
+		<meta content="Documentation for IPS Community Suite 4 themes" name="description">
+
+		<!-- Initializer -->
+		<script>
+		Flatdoc.run({
+		fetcher: Flatdoc.file('Readme.md')
+		});
+		</script>
+	</head>
+	<body role='flatdoc'>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=126597827382308";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<div class='header'>
+			<div class='left'>
+				<h1><a href='http://ipsthemes.com'>IPS Themes</a></h1>
+				<ul>
+					<li><a href='http://ipsthemes.com/themes' target="_blank">Themes</a></li>
+					<li><a href='http://ipsthemes.com/plugins' target="_blank">Plugins</a></li>
+					<li><a href='http://ipsthemes.com/account' target="_blank">Customers</a></li>
+					<li><a href='http://ipsthemes.com/support' target="_blank">Support</a></li>
+				</ul>
+			</div>
+			<div class='right'>
+				<a href="https://twitter.com/ipsthemes" class="twitter-follow-button" data-show-count="false">Follow @ipsthemes</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+				</script>
+				<div class="fb-like" data-href="https://facebook.com/ipsthemes" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+			</div>
+		</div>
+		<div class='content-root'>
+			<div class='menubar'>
+				<div class='menu section' role='flatdoc-menu'></div>
+			</div>
+			<div role='flatdoc-content' class='content'></div>
+		</div>
+	</body>
+</html>
